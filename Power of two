@@ -1,0 +1,14 @@
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        bool f = false;
+       
+        bitset<32>b(n);
+        int c = b.count();
+        if(n>0 &&c==1 )
+        {
+            f = true ;
+        }
+        return f;
+    }
+};
